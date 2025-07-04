@@ -1,0 +1,227 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: linear-gradient(135deg, #ffc62b 0%, #ffb347 100%);
+     min-height: 100vh;
+     padding: 20px;
+     line-height: 1.6;
+ }
+
+ .container {
+     max-width: 800px;
+     margin: 0 auto;
+     background: white;
+     border-radius: 15px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+ }
+
+ .header {
+     background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+     color: white;
+     padding: 40px 30px;
+     text-align: center;
+ }
+
+ .header h1 {
+     font-size: 2.5rem;
+     margin-bottom: 15px;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+ }
+
+ .header p {
+     font-size: 1.1rem;
+     opacity: 0.9;
+ }
+
+ .form-content {
+     padding: 40px 30px;
+ }
+
+ .section {
+     margin-bottom: 40px;
+     padding: 25px;
+     background: #f8f9fa;
+     border-radius: 10px;
+     border-left: 5px solid #ff6b35;
+ }
+
+ .section h2 {
+     color: #333;
+     margin-bottom: 20px;
+     font-size: 1.5rem;
+     display: flex;
+     align-items: center;
+ }
+
+ .section h2::before {
+     content: "📋";
+     margin-right: 10px;
+     font-size: 1.2rem;
+ }
+
+ .question {
+     margin-bottom: 25px;
+ }
+
+ .question h3 {
+     color: #555;
+     margin-bottom: 15px;
+     font-size: 1.1rem;
+ }
+
+ .radio-group {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+ }
+
+ .radio-option {
+     display: flex;
+     align-items: center;
+     padding: 10px 15px;
+     background: white;
+     border: 2px solid #e9ecef;
+     border-radius: 8px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+
+ .radio-option:hover {
+     border-color: #ff6b35;
+     background: #fff5f0;
+ }
+
+ .radio-option input[type="radio"] {
+     margin-right: 12px;
+     transform: scale(1.2);
+     accent-color: #ff6b35;
+ }
+
+ .radio-option label {
+     cursor: pointer;
+     font-weight: 500;
+     color: #333;
+ }
+
+ .radio-option input[type="radio"]:checked+label {
+     color: #ff6b35;
+     font-weight: 600;
+ }
+
+ .text-input-group {
+     margin-top: 15px;
+ }
+
+ .text-input-group label {
+     display: block;
+     margin-bottom: 8px;
+     font-weight: 600;
+     color: #333;
+ }
+
+ .text-input-group input[type="text"],
+ .text-input-group textarea {
+     width: 100%;
+     padding: 12px 15px;
+     border: 2px solid #e9ecef;
+     border-radius: 8px;
+     font-size: 1rem;
+     transition: border-color 0.3s ease;
+ }
+
+ .text-input-group input[type="text"]:focus,
+ .text-input-group textarea:focus {
+     outline: none;
+     border-color: #ff6b35;
+     box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+ }
+
+ .submit-section {
+     text-align: center;
+     margin-top: 40px;
+     padding-top: 30px;
+     border-top: 2px solid #e9ecef;
+ }
+
+ .submit-btn {
+     background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+     color: white;
+     padding: 15px 40px;
+     border: none;
+     border-radius: 50px;
+     font-size: 1.1rem;
+     font-weight: 600;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+ }
+
+ .submit-btn:hover {
+     transform: translateY(-2px);
+     box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+ }
+
+ .submit-btn:active {
+     transform: translateY(0);
+ }
+
+ .error-message {
+     color: #dc3545;
+     font-size: 0.9rem;
+     margin-top: 5px;
+     display: none;
+ }
+
+ .success-message {
+     background: #d4edda;
+     color: #155724;
+     padding: 15px;
+     border-radius: 8px;
+     margin-bottom: 20px;
+     border: 1px solid #c3e6cb;
+     display: none;
+ }
+
+ .progress-bar {
+     height: 4px;
+     background: #e9ecef;
+     border-radius: 2px;
+     margin-bottom: 20px;
+     overflow: hidden;
+ }
+
+ .progress-fill {
+     height: 100%;
+     background: linear-gradient(90deg, #ff6b35, #f7931e);
+     width: 0%;
+     transition: width 0.3s ease;
+ }
+
+ @media (max-width: 768px) {
+     .container {
+         margin: 10px;
+         border-radius: 10px;
+     }
+
+     .header {
+         padding: 30px 20px;
+     }
+
+     .header h1 {
+         font-size: 2rem;
+     }
+
+     .form-content {
+         padding: 30px 20px;
+     }
+
+     .section {
+         padding: 20px 15px;
+     }
+ }

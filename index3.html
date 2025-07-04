@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa Restaurante Tagline</title>
+    <link rel="icon" type="image-x icon" href="img/comida.png">
+    <link rel="stylesheet" href="stylesheet/pesquisa.css">
+    <script src="js/pesquisa.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Bem-vindo ao Restaurant Tagline!</h1>
+            <p>Por favor, responda à nossa pesquisa para nos ajudar a melhorar nossos serviços.</p>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="form-content">
+            <div class="success-message" id="successMessage">
+                Obrigado! Sua pesquisa foi enviada com sucesso!
+            </div>
+
+            <form id="surveyForm">
+                <!-- Seção: Avaliação dos Pratos -->
+                <div class="section">
+                    <h2>Avaliação sobre os pratos</h2>
+                    
+                    <div class="question">
+                        <h3>Como você avaliaria a qualidade da comida?</h3>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="Comida1" name="qualidade_comida" value="Excelente" required>
+                                <label for="Comida1">Excelente</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Comida2" name="qualidade_comida" value="Boa">
+                                <label for="Comida2">Boa</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Comida3" name="qualidade_comida" value="Regular">
+                                <label for="Comida3">Regular</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Comida4" name="qualidade_comida" value="Ruim">
+                                <label for="Comida4">Ruim</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Comida5" name="qualidade_comida" value="Muito ruim">
+                                <label for="Comida5">Muito ruim</label>
+                            </div>
+                        </div>
+                        <div class="error-message" id="error-qualidade_comida">Por favor, selecione uma opção.</div>
+                    </div>
+
+                    <div class="question">
+                        <h3>O cardápio atendeu às suas expectativas?</h3>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="Cardapio1" name="cardapio" value="Sim, superou" required>
+                                <label for="Cardapio1">Sim, superou!</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Cardapio2" name="cardapio" value="Sim, atendeu">
+                                <label for="Cardapio2">Sim, atendeu</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Cardapio3" name="cardapio" value="Não, poderia ser melhor">
+                                <label for="Cardapio3">Não, poderia ser melhor</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Cardapio4" name="cardapio" value="Não, não atendeu">
+                                <label for="Cardapio4">Não, não atendeu</label>
+                            </div>
+                        </div>
+                        <div class="error-message" id="error-cardapio">Por favor, selecione uma opção.</div>
+                    </div>
+
+                    <div class="text-input-group">
+                        <label for="PratoFavorito">Qual foi o seu prato favorito?</label>
+                        <input type="text" id="PratoFavorito" name="prato_favorito" placeholder="Digite o nome do prato..." required>
+                        <div class="error-message" id="error-prato_favorito">Por favor, informe seu prato favorito.</div>
+                    </div>
+                </div>
+
+                <!-- Seção: Avaliação do Serviço -->
+                <div class="section">
+                    <h2>Avaliação do Serviço</h2>
+                    
+                    <div class="question">
+                        <h3>Como você avaliaria o atendimento dos funcionários?</h3>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="Atendimento1" name="atendimento" value="Muito bom" required>
+                                <label for="Atendimento1">Muito bom</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Atendimento2" name="atendimento" value="Bom">
+                                <label for="Atendimento2">Bom</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Atendimento3" name="atendimento" value="Regular">
+                                <label for="Atendimento3">Regular</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Atendimento4" name="atendimento" value="Ruim">
+                                <label for="Atendimento4">Ruim</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Atendimento5" name="atendimento" value="Muito ruim">
+                                <label for="Atendimento5">Muito ruim</label>
+                            </div>
+                        </div>
+                        <div class="error-message" id="error-atendimento">Por favor, selecione uma opção.</div>
+                    </div>
+
+                    <div class="question">
+                        <h3>O tempo de espera pelo seu pedido foi satisfatório?</h3>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="Espera1" name="tempo_espera" value="Muito satisfatório" required>
+                                <label for="Espera1">Muito satisfatório</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Espera2" name="tempo_espera" value="Satisfatório">
+                                <label for="Espera2">Satisfatório</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Espera3" name="tempo_espera" value="Regular">
+                                <label for="Espera3">Regular</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Espera4" name="tempo_espera" value="Insatisfatório">
+                                <label for="Espera4">Insatisfatório</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Espera5" name="tempo_espera" value="Muito insatisfatório">
+                                <label for="Espera5">Muito insatisfatório</label>
+                            </div>
+                        </div>
+                        <div class="error-message" id="error-tempo_espera">Por favor, selecione uma opção.</div>
+                    </div>
+
+                    <div class="question">
+                        <h3>Os funcionários foram prestativos e atenciosos?</h3>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="Prestativo1" name="prestativos" value="Sempre" required>
+                                <label for="Prestativo1">Sempre</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Prestativo2" name="prestativos" value="Na maioria das vezes">
+                                <label for="Prestativo2">Na maioria das vezes</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Prestativo3" name="prestativos" value="Às vezes">
+                                <label for="Prestativo3">Às vezes</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Prestativo4" name="prestativos" value="Raramente">
+                                <label for="Prestativo4">Raramente</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Prestativo5" name="prestativos" value="Nunca">
+                                <label for="Prestativo5">Nunca</label>
+                            </div>
+                        </div>
+                        <div class="error-message" id="error-prestativos">Por favor, selecione uma opção.</div>
+                    </div>
+                </div>
+
+                <!-- Seção: Avaliação do Ambiente -->
+                <div class="section">
+                    <h2>Avaliação do Ambiente</h2>
+                    
+                    <div class="question">
+                        <h3>O ambiente foi agradável e confortável?</h3>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="Ambiente1" name="ambiente" value="Muito agradável" required>
+                                <label for="Ambiente1">Muito agradável</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Ambiente2" name="ambiente" value="Agradável">
+                                <label for="Ambiente2">Agradável</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Ambiente3" name="ambiente" value="Neutro">
+                                <label for="Ambiente3">Neutro</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Ambiente4" name="ambiente" value="Desagradável">
+                                <label for="Ambiente4">Desagradável</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Ambiente5" name="ambiente" value="Muito desagradável">
+                                <label for="Ambiente5">Muito desagradável</label>
+                            </div>
+                        </div>
+                        <div class="error-message" id="error-ambiente">Por favor, selecione uma opção.</div>
+                    </div>
+
+                    <div class="question">
+                        <h3>Você recomendaria nosso restaurante a seus amigos e familiares?</h3>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="Recomendacao1" name="recomendacao" value="Com certeza" required>
+                                <label for="Recomendacao1">Com certeza</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Recomendacao2" name="recomendacao" value="Talvez">
+                                <label for="Recomendacao2">Talvez</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Recomendacao3" name="recomendacao" value="Provavelmente não">
+                                <label for="Recomendacao3">Provavelmente não</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Recomendacao4" name="recomendacao" value="De jeito nenhum">
+                                <label for="Recomendacao4">De jeito nenhum</label>
+                            </div>
+                        </div>
+                        <div class="error-message" id="error-recomendacao">Por favor, selecione uma opção.</div>
+                    </div>
+
+                    <div class="text-input-group">
+                        <label for="Sugestao">Há algo que você gostaria de sugerir ou comentar?</label>
+                        <textarea id="Sugestao" name="sugestao" rows="4" placeholder="Compartilhe suas sugestões ou comentários..."></textarea>
+                    </div>
+                </div>
+
+                <div class="submit-section">
+                    <button type="submit" class="submit-btn">
+                        Enviar Pesquisa
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
