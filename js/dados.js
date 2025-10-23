@@ -68,7 +68,7 @@
             // Hardcoded credentials for demonstration
             const dadosCorretos = {
                 nomecompleto: "admin",
-                email: "admin@gmail.com",
+                email: "admin@email.com",
                 cpf: "123.456.789-00",
                 rg: "12.345.678-9",
                 pais: "Brasil"
@@ -81,9 +81,9 @@
             if (autenticado) {
                 document.getElementById('successMessage').style.display = 'block';
                 setTimeout(() => {
-                    alert("Login bem-sucedido!");
+                    alert("Boas-Vindas ao RestaurantTagline!!!");
                     window.location.href = "index2.html";
-                    console.log("Redirecionando para index.html...");
+                    console.log("Boas-Vindas ao RestaurantTagline!!!...");
                 }, 1000);
             } else {
                 alert("Dados incorretos! Verifique suas informações.\n\nDica: Use 'admin' para todos os campos:\n\nemail: admin@gmail.com \npaís: Brasil \ncpf: 12345678900 \nrg: 123456789");

@@ -53,7 +53,6 @@
             if (validateForm()) {
                 // Simulate form submission
                 const submitBtn = document.querySelector('.submit-btn');
-                const originalText = submitBtn.innerHTML;
                 
                 submitBtn.innerHTML = '⏳ Enviando...';
                 submitBtn.disabled = true;
