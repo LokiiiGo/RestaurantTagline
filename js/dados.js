@@ -80,8 +80,8 @@
                 document.getElementById('successMessage').style.display = 'block';
                 setTimeout(() => {
                     alert("Boas-Vindas ao RestaurantTagline!!!");
-                    window.location.href = "/restaurant-tagline/index.html";
-                    console.log("Boas-Vindas ao RestaurantTagline!!!...");
+                    window.location.href = "/pagina-principal/index.html";
+                    console.log("Boas-Vindas ao RestaurantTagline!");
                 }, 1000);
             } else {
                 alert("Dados incorretos! Verifique suas informações.\n\nDica: Use 'admin' para todos os campos:\n\nemail: admin@email.com \npaís: Brasil \ncpf: 12345678900 \nrg: 123456789");
