@@ -55,7 +55,7 @@
                 // Simulate form submission
                 const submitBtn = document.querySelector('.submit-btn');
                 
-                submitBtn.innerHTML = '⏳ Enviando...';
+                submitBtn.innerHTML = 'Enviando...';
                 submitBtn.disabled = true;
                 
                 setTimeout(() => {
