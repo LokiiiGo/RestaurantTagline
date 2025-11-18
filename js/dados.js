@@ -22,7 +22,6 @@
             const rg = document.getElementById('rg').value.trim();
             const pais = document.getElementById('pais').value.trim();
 
-            // Hide all error messages
             document.querySelectorAll('.error-message').forEach(msg => msg.style.display = 'none');
 
             let isValid = true;
@@ -65,7 +64,6 @@
             const usuario = validarCampos();
             if (!usuario) return false;
 
-            // Hardcoded credentials for demonstration
             const dadosCorretos = {
                 nomecompleto: "admin",
                 email: "admin@email.com",
@@ -82,11 +80,11 @@
                 document.getElementById('successMessage').style.display = 'block';
                 setTimeout(() => {
                     alert("Boas-Vindas ao RestaurantTagline!!!");
-                    window.location.href = "index2.html";
+                    window.location.href = "/restaurant-tagline/index.html";
                     console.log("Boas-Vindas ao RestaurantTagline!!!...");
                 }, 1000);
             } else {
-                alert("Dados incorretos! Verifique suas informações.\n\nDica: Use 'admin' para todos os campos:\n\nemail: admin@gmail.com \npaís: Brasil \ncpf: 12345678900 \nrg: 123456789");
+                alert("Dados incorretos! Verifique suas informações.\n\nDica: Use 'admin' para todos os campos:\n\nemail: admin@email.com \npaís: Brasil \ncpf: 12345678900 \nrg: 123456789");
             }
 
             return false;
