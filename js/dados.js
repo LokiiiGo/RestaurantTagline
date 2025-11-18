@@ -80,7 +80,7 @@
                 document.getElementById('successMessage').style.display = 'block';
                 setTimeout(() => {
                     alert("Boas-Vindas ao Restaurant Tagline!");
-                    window.location.href = "/pagina-inicial/index.html";
+                    window.location.href = "/pagina-principal.html";
                     console.log("Boas-Vindas ao RestaurantTagline!");
                 }, 1000);
             } else {

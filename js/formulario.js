@@ -1,3 +1,4 @@
+
         // Progress bar functionality
         function updateProgressBar() {
             const form = document.getElementById('surveyForm');
