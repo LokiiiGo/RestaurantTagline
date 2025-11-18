@@ -79,8 +79,8 @@
             if (autenticado) {
                 document.getElementById('successMessage').style.display = 'block';
                 setTimeout(() => {
-                    alert("Boas-Vindas ao RestaurantTagline!!!");
-                    window.location.href = "/pagina-principal/index.html";
+                    alert("Boas-Vindas ao Restaurant Tagline!");
+                    window.location.href = "/pagina-inicial/index.html";
                     console.log("Boas-Vindas ao RestaurantTagline!");
                 }, 1000);
             } else {
