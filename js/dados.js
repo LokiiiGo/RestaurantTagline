@@ -84,7 +84,7 @@
                     console.log("Boas-Vindas ao RestaurantTagline!");
                 }, 1000);
             } else {
-                alert("Dados incorretos! Verifique suas informações.\n\nDica: Use 'admin' para todos os campos:\n\nemail: admin@email.com \npaís: Brasil \ncpf: 12345678900 \nrg: 123456789");
+                alert("Dados incorretos! Verifique suas informações.\n\nDica: Use 'admin' para todos os campos:\n\nemail: admin@email.com \ncpf: 12345678900 \nrg: 123456789 \npaís: Brasil");
             }
 
             return false;
